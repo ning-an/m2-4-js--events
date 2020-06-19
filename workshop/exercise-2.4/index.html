@@ -2,7 +2,46 @@
 <html>
   <head>
     <title>Exercise 2.4</title>
-    <style></style>
+    <style>
+      .header {
+        width: 100vw;
+        height: 100px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        height: 50%;
+        width: 100px;
+      }
+      .dotSection {
+        margin: 60px auto;
+        background-color: lightgray;
+        width: 80vw;
+        height: 80vw;
+        position: relative;
+        padding: 10px;
+      }
+      .dot {
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        color: white;
+        opacity: 0;
+      }
+      
+      .board {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        width: 100px;
+        margin: 100px auto;
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="main" id="main"></div>
