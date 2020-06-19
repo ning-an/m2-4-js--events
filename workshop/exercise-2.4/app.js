@@ -53,7 +53,7 @@ function clickHandler(e) {
     for (let i = 0; i < dotList.length; i++) {
         dotList[i].style.opacity = 1;
     }
-    let timer = Math.ceil(Math.random() * 5 + 5);
+    let timer = Math.ceil(Math.random() * 5 + 1);
     this.innerText = timer;
     let countDown = setInterval(() => {
         timer--;
@@ -68,6 +68,9 @@ function clickHandler(e) {
             board.style.opacity = 1;
             board.style.zIndex = 99;
             btn.innerText = 'Time out';
+            // dotList.forEach(function(dot) {
+            //     dot.style.zIndex = 0;
+            // })
             clearInterval(countDown);
         }
     }, 1000);
