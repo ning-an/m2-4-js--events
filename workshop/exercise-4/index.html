@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 4 - Hangman</title>
+    <style>
+      .result {
+        visibility: hidden;
+        color: red;
+      }
+      .btn {
+        width: 30px;
+        height: 30px;
+        border: none;
+        margin-right: 3px;
+        margin-bottom: 30px;
+      }
+      .win {
+        background-color: paleturquoise;
+        width: 100px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form class='myForm'>
+      <fieldset>
+        <legend>Hangman Game</legend>
+        <label>
+          Player 1: Please enter any word here: 
+          <input type="text" class='input'>
+        </label>
+        <input type="submit" value='Start Game' class='start'>
+      </fieldset>
+    </form>
+    <!-- Play area -->
+    <div class='playArea'>
+      <h2>Play Area</h2>
+    </div>
+    <h2>Not included:</h2>
+    <div class='scratch'></div>
+    <!-- Result section -->
+    <div>
+      <p>You are a <span class='result'>D</span><span class='result'>E</span><span class='result'>A</span><span class='result'>D</span> man!</p>
+      <div class='win'>
+        You win!
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
