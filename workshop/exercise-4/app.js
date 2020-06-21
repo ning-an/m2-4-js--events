@@ -43,7 +43,7 @@ function startGame(e) {
         if (count == 4) {
             document.removeEventListener('keypress', guess);
             win.style.opacity = 1;
-            win.innerText = 'You Lose';
+            win.innerText = 'You Lose!\nThe answer is:\n' + word;
         }
     }
     document.addEventListener('keypress', guess);
